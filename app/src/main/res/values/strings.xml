@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">压一压</string>
+    <string name="album">相册</string>
+    <string name="screen">拍摄</string>
+    <string name="noRelevantPermissions">没有相关权限</string>
+    <string name="pressAgainToExitTheProgram">再按一次退出程序</string>
+    <string name="image_content_description">图片</string>
+    <string name="not_support_format">不支持的格式</string>
+    <string name="compression">压缩</string>
+    <string name="no_preview_yet">暂无预览</string>
+    <string name="website">yedajiang44.com</string>
+    <string name="no_image_to_be_compressed">无可压缩的图片</string>
+    <string name="contains_unsupported_formats">包含不支持的格式</string>
+    <string name="skip_unsupported_formats">自动跳过不支持的格式</string>
+    <string name="waiting">请稍后</string>
+    <string name="image_size_detail">压缩后:%1$,.2fkb（原图大小：%2$,.2fkb）</string>
+    <string name="setting">设置</string>
+    <string name="compression_progress">正在压缩第%1$d，剩余%2$d待压缩</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+    <string-array name="compressed_mode_text">
+        <item>尺寸压缩</item>
+        <item>质量压缩</item>
+        <item>尺寸和质量压缩</item>
+    </string-array>
+    <string-array name="compressed_mode_value">
+        <item>SIZE</item>
+        <item>QUALITY</item>
+        <item>SIZE_QUALITY</item>
+    </string-array>
+    <string name="compression_ratio_default_value">30</string>
+    <string name="basic_setting">基础设置</string>
+    <string name="cancel">取消</string>
+    <string name="compressed_mode_default_value">QUALITY</string>
+    <string name="compressed_mode_summary">设置压缩模式，默认质量压缩</string>
+    <string name="compressed_mode_title">压缩模式</string>
+    <string name="compression_ratio_key">compression_ratio</string>
+    <string name="compressed_mode_key">compressed_mode</string>
+    <string name="compression_ratio">压缩率</string>
+    <string name="compression_ratio_summary">质量压缩时的压缩率，数值越大压缩后的图片越小，但是图片质量页会越低</string>
+    <string name="about">关于</string>
+    <string name="update">更新</string>
+    <string name="check_update_key">check_update</string>
+    <string name="check_update">检查更新</string>
+    <string name="checking_update">正在检查更新</string>
+    <string name="about_app">关于App</string>
+    <string name="about_app_key">about_app_key</string>
+    <string name="about_app_summary">压一压是一款致力于压缩图片的软件，暂时只支持常见手机拍摄的照片格式，以后将会支持更多的格式，敬请期待。。。</string>
+    <string name="choose_out_file_path_key">choose_file_path</string>
+    <string name="choose_file_path">选择文件夹</string>
+    <string name="choose_out_file_path_summary">压缩后的图片保存位置</string>
+    <string name="choose">选择</string>
+    <string name="create_folder">新建</string>
+    <string name="emptyTextRes">无子目录</string>
+    <string name="out_file_path">输出文件夹</string>
+    <string name="noUpdate">暂无更新</string>
+</resources>

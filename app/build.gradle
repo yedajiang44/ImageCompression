@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "imagecompression.yedajiang44.com"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir(['libs'])
+        }
+    }
+//    externalNativeBuild {
+//        cmake {
+//            path file('CMakeLists.txt')
+//        }
+//    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
+    implementation 'com.google.android.material:material:1.1.0-alpha01'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.preference:preference:1.0.0'
+    //rxjava2
+    implementation "io.reactivex.rxjava2:rxjava:2.2.2"
+
+    //rxlifecycle
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-navi:2.1.0'
+
+    //rxpermissions权限请求
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+
+    //Luban压缩
+    implementation 'top.zibin:Luban:1.1.8'
+
+    //butterknife
+    implementation 'com.jakewharton:butterknife:9.0.0-rc1'
+    kapt 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
+
+    //图片选择
+    implementation 'org.devio.takephoto:takephoto_library:4.1.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    kapt 'com.github.bumptech.glide:compiler:4.8.0'
+
+    //高清图加载
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
+
+    //BRVAH
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.43-alpha1'
+
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    //Light图片压缩
+    implementation 'com.noober.light:core:1.2.0'
+
+    //kotlin反射库
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+    //文件选择弹窗
+    implementation 'com.afollestad.material-dialogs:files:2.0.0-beta5'
+
+    //逗逼豪更新插件
+    implementation "com.github.yjfnypeu:UpdatePlugin:3.1.2"
+}

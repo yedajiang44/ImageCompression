@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+            android:title="@string/basic_setting">
+        <ListPreference
+                android:key="@string/compressed_mode_key"
+                android:title="@string/compressed_mode_title"
+                android:summary="@string/compressed_mode_summary"
+                android:defaultValue="@string/compressed_mode_default_value"
+                android:entries="@array/compressed_mode_text"
+                android:entryValues="@array/compressed_mode_value"
+                android:negativeButtonText="@string/cancel"/>
+        <androidx.preference.SeekBarPreference
+                android:key="@string/compression_ratio_key"
+                android:title="@string/compression_ratio"
+                android:summary="@string/compression_ratio_summary"
+                android:defaultValue="@string/compression_ratio_default_value"/>
+        <Preference
+                android:key="@string/choose_out_file_path_key"
+                android:title="@string/out_file_path"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="@string/about">
+        <Preference
+                android:key="@string/check_update_key"
+                android:title="@string/update"
+                android:summary="@string/check_update"/>
+        <Preference
+                android:key="@string/about_app_key"
+                android:title="@string/about_app"
+                android:summary="@string/about_app_summary"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

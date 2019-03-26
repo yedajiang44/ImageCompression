@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--&lt;!&ndash; 设置Menu菜单的背景色 &ndash;&gt;-->
+        <!--<item name="android:itemBackground">@color/colorPrimary</item>-->
+        <!--&lt;!&ndash; 设置Menu菜单的字体颜色 &ndash;&gt;-->
+        <!--<item name="android:textColorPrimary">@android:color/white</item>-->
+        <!--&lt;!&ndash; 设置Menu窗口不覆盖Toolbar视图 &ndash;&gt;-->
+        <!--<item name="overlapAnchor">false</item>-->
+    </style>
+
+</resources>
