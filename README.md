@@ -10,7 +10,7 @@
 > * 自定义压缩模式
 
 计划
-> * 将核心库做成lib供大家使用
+> * 将核心库做成lib供大家使用(发现已经有人做了，所以暂时就不重复造轮子了)
 > * 编写wiki
 
 在线版：[http://yedajiang44.com/tools/Home/ImageCompression](http://yedajiang44.com/tools/Home/ImageCompression)
